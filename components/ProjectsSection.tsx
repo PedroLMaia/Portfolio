@@ -13,7 +13,7 @@ const projects = [
     link: "https://pedrolmaia.github.io/Projeto_Loja_HTML_CSS",
   },
   {
-    name: "Portfolio",
+    name: "Portfólio",
     description: "Este é o meu portfólio pessoal online, desenvolvido utilizando as tecnologias Next.js e Tailwind CSS.",
     image: "/port.png",
     github: "https://github.com/PedroLMaia/Portfolio",
