@@ -17,7 +17,7 @@ const projects = [
     description: "Este é o meu portfólio pessoal online, desenvolvido utilizando as tecnologias Next.js e Tailwind CSS.",
     image: "/port.png",
     github: "https://github.com/PedroLMaia/Portfolio",
-    link: "https://pedrolmaia.github.io/Portfolio/",
+    link: "https://pedro-luiz.vercel.app/",
   },
   {
     name: "GPT-Voice App",
