@@ -45,7 +45,7 @@ const HeroSection = () => {
             offset={-100}
             duration={500}
           >
-            Projects
+            Projetos
           </Link>
         </div>
       </div>
