@@ -5,6 +5,13 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Habits",
+    description:
+      "O Habits é um aplicativo que ajuda os usuários a controlar suas tarefas diárias, monitorando as atividades realizadas e não realizadas. Projeto criado durante a NLW Setup 2023, usando React, Tailwind, Prisma e Typescript.",
+    image: "/habits.png",
+    github: "https://github.com/PedroLMaia/nlw-setup-habits",
+    link: "https://habits-nlw-2023.vercel.app/",
+  },{
     name: "VGA Store",
     description:
       "Primeiro projeto do curso de Análise e Desenvolvimesnto de Sistemas, projeto de uma loja E-commerce de eletrônicos, usando somente HTML e CSS puro.",
