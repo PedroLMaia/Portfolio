@@ -1,5 +1,5 @@
 # Portfolio
-![Cap]([https://raw.githubusercontent.com/PedroLMaia/Portfolio/main/public/ai-horizon.png](https://raw.githubusercontent.com/PedroLMaia/Portfolio/main/public/port.png))
+![Cap](https://raw.githubusercontent.com/PedroLMaia/Portfolio/main/public/port.png)
 
 ### Descrição
 Portfolio pessoal feito com Next 13 e Tailwind CSS
