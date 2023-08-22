@@ -5,6 +5,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "AI Horizon",
+    description:
+      "A Plataforma de IA Horizon AI é um serviço baseado em SaaS, que aproveita as APIs da OpenAI e da Replicate, além de integrar diversos outros recursos como Stripe, Clerk e Crisp-chat com webhooks. Foi desenvolvida utilizando Next 13, Tailwind CSS, Prisma e MySQL com a plataforma de banco de dados PlanetScale. Também inclui integração com Stripe para pagamentos, Clerk para autenticação e Crisp-chat para criar um chat de suporte.",
+    image: "/ai-horizon.png",
+    github: "https://github.com/PedroLMaia/AIHorizon",
+    link: "https://ai-horizon.vercel.app/",
+  },
+  {
     name: "Habits",
     description:
       "O Habits é um aplicativo que ajuda os usuários a controlar suas tarefas diárias, monitorando as atividades realizadas e não realizadas. Projeto criado durante a NLW Setup 2023, usando React, Tailwind, Prisma e Typescript.",
