@@ -7,7 +7,7 @@ const projects = [
   {
     name: "AI Horizon",
     description:
-      "A Plataforma de IA Horizon AI é um serviço baseado em SaaS, que aproveita as APIs da OpenAI e da Replicate, além de integrar diversos outros recursos como Stripe, Clerk e Crisp-chat com webhooks. Foi desenvolvida utilizando Next 13, Tailwind CSS, Prisma e MySQL com a plataforma de banco de dados PlanetScale. Também inclui integração com Stripe para pagamentos, Clerk para autenticação e Crisp-chat para criar um chat de suporte.",
+      "A Plataforma AI Horizon é um serviço baseado em SaaS, que aproveita as APIs da OpenAI e da Replicate, além de integrar diversos outros recursos como Stripe, Clerk e Crisp-chat com webhooks. Foi desenvolvida utilizando Next 13, Tailwind CSS, Prisma e MySQL com a plataforma de banco de dados PlanetScale. Também inclui integração com Stripe para pagamentos, Clerk para autenticação e Crisp-chat para criar um chat de suporte.",
     image: "/ai-horizon.png",
     github: "https://github.com/PedroLMaia/AIHorizon",
     link: "https://ai-horizon.vercel.app/",
