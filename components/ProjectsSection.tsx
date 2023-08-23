@@ -35,11 +35,11 @@ const projects = [
     link: "https://pedro-luiz.vercel.app/",
   },
   {
-    name: "GPT-Voice App",
+    name: "Jarvis - IA Assistant",
     description: "O Jarvis é um assistente que fornece transcrição de voz para texto e respostas utilizando a API da OpenAI. Com o Jarvis, você pode interagir facilmente com a IA usando sua voz e receber respostas úteis em retorno.",
     image: "/jar.png",
-    github: "https://github.com/PedroLMaia/GPT-Voice",
-    link: "https://pedrolmaia.github.io/GPT-Voice/",
+    github: "https://github.com/PedroLMaia/Jarvis-GPT",
+    link: "https://jarvis-ia.vercel.app/",
   }, 
   {
     name: "Spotify - HTML e CSS",
