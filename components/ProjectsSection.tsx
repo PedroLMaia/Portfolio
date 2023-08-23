@@ -47,6 +47,13 @@ const projects = [
     image: "/spotify-html-css.png",
     github: "https://github.com/PedroLMaia/Spotify-html-clone",
     link: "https://pedrolmaia.github.io/Spotify-html-clone/",
+  }, 
+  {
+    name: "Space Invaders",
+    description: "Jogo Space Invaders construído completamente do zero usando somente JavaScrip e HTML. Projeto de avaliação final da disciplina de Raciocínio logico e algoritmo - Unifor.",
+    image: "/space-invaders.png",
+    github: "https://github.com/PedroLMaia/Space_Invaders_Project",
+    link: "https://pedrolmaia.github.io/Space_Invaders_Project/",
   }
 ]
 
