@@ -41,6 +41,13 @@ const projects = [
     github: "https://github.com/PedroLMaia/GPT-Voice",
     link: "https://pedrolmaia.github.io/GPT-Voice/",
   },
+  {
+    name: "Spotify - HTML e CSS",
+    description: "Uma simples pagina do Spotify feita com html e css puro.",
+    image: "/spotify-html-css.png",
+    github: "https://github.com/PedroLMaia/Spotify-html-clone",
+    link: "https://pedrolmaia.github.io/Spotify-html-clone/",
+  }
 ]
 
 const ProjectsSection = () => {
