@@ -40,7 +40,7 @@ const projects = [
     image: "/jar.png",
     github: "https://github.com/PedroLMaia/GPT-Voice",
     link: "https://pedrolmaia.github.io/GPT-Voice/",
-  },
+  }, 
   {
     name: "Spotify - HTML e CSS",
     description: "Uma simples pagina do Spotify feita com html e css puro.",
