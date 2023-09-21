@@ -90,6 +90,7 @@ export default function Navbar() {
                 );
               })}
               <a
+                onClick={() => {setNavbar(!navbar)}}
                 href="https://www.linkedin.com/in/PedroLMaia/"
                 rel="noreferrer"
                 target="_blank"
@@ -98,6 +99,7 @@ export default function Navbar() {
                 <AiOutlineLinkedin size={25} />
               </a>
               <a
+                onClick={() => {setNavbar(!navbar)}}
                 href="https://github.com/PedroLMaia"
                 rel="noreferrer"
                 target="_blank"
@@ -107,7 +109,7 @@ export default function Navbar() {
               </a>
               {theme === 'light' ? (
               <a
-                onClick={() => setTheme('dark')}
+                onClick={() => {setTheme('dark'), setNavbar(!navbar)}}
                 rel="noreferrer"
                 target="_blank"
                 className="cursor-pointer flex justify-center lg:inline-block text-neutral-900 hover:-translate-y-1 transition-transform hover:text-neutral-100 hover:bg-gray-900 dark:text-neutral-100 dark:hover:text-black dark:hover:bg-white px-2 py-2 rounded-lg"
@@ -115,7 +117,7 @@ export default function Navbar() {
                 <RiSunLine size={25}/>
               </a>) :(
                 <a
-                onClick={() => setTheme('light')}
+                onClick={() => {setTheme('light'), setNavbar(!navbar)}}
                 rel="noreferrer"
                 target="_blank"
                 className="cursor-pointer flex justify-center lg:inline-block text-neutral-900 hover:-translate-y-1 transition-transform hover:text-neutral-100 hover:bg-gray-900 dark:text-neutral-100 dark:hover:text-black dark:hover:bg-white px-2 py-2 rounded-lg"
