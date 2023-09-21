@@ -6,8 +6,8 @@ import { HiArrowDown } from "react-icons/hi"
 
 const HeroSection = () => {
   return (
-    <section id="home">
-      <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-30 md:flex-row md:space-x-4 md:text-left">
+    <section className="animate-fadeIn animation-delay-2" id="home">
+      <div className="flex flex-col text-center items-center justify-center my-10 py-16 sm:py-32 md:py-30 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2 dark:grayscale ...">
           <Image
             src="/pedro.png"
@@ -38,7 +38,8 @@ const HeroSection = () => {
           </p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-gray-800 rounded shadow hover:bg-gray-900 dark:bg-neutral-100 dark:text-black"
+            // className="text-neutral-100 font-semibold px-6 py-3 bg-gray-800 rounded shadow hover:bg-gray-900 dark:bg-neutral-100 dark:text-black"
+            className="bg-gray-800 text-neutral-100 rounded shadow flex justify-center sm:inline-block hover:-translate-y-1 transition-transform cursor-pointer hover:text-neutral-100 hover:bg-gray-900 dark:bg-neutral-200 dark:text-black dark:hover:text-black dark:hover:bg-neutral-100 font-semibold px-6 py-3"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -49,7 +50,7 @@ const HeroSection = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-row items-center text-center justify-center">
+      <div className="flex flex-row items-center text-center justify-center animate-fadeIn">
         <Link
           to="about"
           activeClass="active"
