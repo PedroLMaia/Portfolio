@@ -64,10 +64,10 @@ const ProjectsSection = () => {
   }
 
   return (
-    <section id="projects">
+    <section className="animate-fadeIn" id="projects">
       <h1 className="my-10 text-center font-bold text-4xl text-gray-800 dark:text-neutral-100">
         Projetos
-        <hr className="w-7 h-1 mx-auto my-4 bg-black border-0 rounded bg-gray-600 dark:bg-neutral-100"></hr>
+        <hr className="w-7 h-1 mx-auto my-4 border-0 rounded bg-gray-600 dark:bg-neutral-100"></hr>
       </h1>
 
       <div className="flex flex-col space-y-28">

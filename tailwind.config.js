@@ -13,7 +13,8 @@ module.exports = {
     extend: {
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {
-        fadeIn: "fadeIn 1.5s",
+        fadeInNav: "fadeIn 1.5s",
+        fadeIn: "fadeIn 2.5s",
         bounce:
           "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
         slideUp: "slideUp 0.5s",

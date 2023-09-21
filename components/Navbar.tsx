@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
 import { usePathname } from "next/navigation";
@@ -28,12 +28,20 @@ const NAV_ITEMS: Array<NavItem> = [
 ];
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
   const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
+
+  const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if(!mounted) return null
+  
   return (
-    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-black dark:border-b dark:border-black">
+    <header className="w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-black dark:border-b dark:border-black animate-fadeInNav">
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -61,14 +69,14 @@ export default function Navbar() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <div className="items-center justify-center space-y-3.5 md:flex md:space-x-1 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <Link
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block text-neutral-900  hover:text-neutral-500 cursor-pointer dark:text-neutral-100"
+                      "flex justify-center lg:inline-block text-neutral-900 hover:-translate-y-1 transition-transform cursor-pointer hover:text-neutral-100 hover:bg-gray-900 dark:text-neutral-100 dark:hover:text-black dark:hover:bg-white px-3 py-2 rounded-lg  "
                     }
                     activeClass="active"
                     spy={true}
@@ -85,7 +93,7 @@ export default function Navbar() {
                 href="https://www.linkedin.com/in/PedroLMaia/"
                 rel="noreferrer"
                 target="_blank"
-                className="block lg:inline-block text-neutral-900 hover:text-neutral-500 cursor-pointer dark:text-neutral-100"
+                className="flex justify-center lg:inline-block text-neutral-900 hover:-translate-y-1 transition-transform hover:text-neutral-100 hover:bg-gray-900 dark:text-neutral-100 dark:hover:text-black dark:hover:bg-white px-2 py-2 rounded-lg"
               >
                 <AiOutlineLinkedin size={25} />
               </a>
@@ -93,24 +101,27 @@ export default function Navbar() {
                 href="https://github.com/PedroLMaia"
                 rel="noreferrer"
                 target="_blank"
-                className="block lg:inline-block text-neutral-900 hover:text-neutral-500 cursor-pointer dark:text-neutral-100"
+                className="flex justify-center lg:inline-block text-neutral-900 hover:-translate-y-1 transition-transform hover:text-neutral-100 hover:bg-gray-900 dark:text-neutral-100 dark:hover:text-black dark:hover:bg-white px-2 py-2 rounded-lg"
               >
                 <AiOutlineGithub size={25} />
               </a>
-              {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="bg-slate-100 rounded-xl"
-                >
-                  <RiSunLine size={25} color="black" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="bg-slate-100 rounded-xl"
-                >
-                  <RiMoonFill size={25} />
-                </button>
+              {theme === 'light' ? (
+              <a
+                onClick={() => setTheme('dark')}
+                rel="noreferrer"
+                target="_blank"
+                className="cursor-pointer flex justify-center lg:inline-block text-neutral-900 hover:-translate-y-1 transition-transform hover:text-neutral-100 hover:bg-gray-900 dark:text-neutral-100 dark:hover:text-black dark:hover:bg-white px-2 py-2 rounded-lg"
+              >
+                <RiSunLine size={25}/>
+              </a>) :(
+                <a
+                onClick={() => setTheme('light')}
+                rel="noreferrer"
+                target="_blank"
+                className="cursor-pointer flex justify-center lg:inline-block text-neutral-900 hover:-translate-y-1 transition-transform hover:text-neutral-100 hover:bg-gray-900 dark:text-neutral-100 dark:hover:text-black dark:hover:bg-white px-2 py-2 rounded-lg"
+              >
+                <RiMoonFill size={25}/>
+              </a>
               )}
             </div>
           </div>

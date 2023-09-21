@@ -18,7 +18,7 @@ const skills = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
+      <div className="my-12 pb-12 md:pt-16 md:pb-48 animate-fadeIn">
         <h1 className="text-center font-bold text-4xl text-gray-800 dark:text-neutral-100">
           Sobre
           <hr className="w-7 h-1 mx-auto my-4 bg-gray-600 border-0 rounded dark:bg-neutral-100"></hr>
