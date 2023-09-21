@@ -13,7 +13,7 @@ const projects = [
     link: "https://ai-horizon.vercel.app/",
   },
   {
-    name: "AI Horizon",
+    name: "Tailwind CSS",
     description:
       "Aplicação desenvolvida com a utilização das tecnologias React, Next.js e Tailwind CSS por meio do curso da Cod3r - React/Next.js com Tailwind CSS. Esta aplicação permitiu aprofundar os conhecimentos e habilidades em front-end, resultando nessa interface moderna e pratica.",
     image: "/next-tailwind-cod3r.png",
