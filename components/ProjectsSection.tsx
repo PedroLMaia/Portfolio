@@ -13,6 +13,14 @@ const projects = [
     link: "https://ai-horizon.vercel.app/",
   },
   {
+    name: "AI Horizon",
+    description:
+      "Aplicação desenvolvida com a utilização das tecnologias React, Next.js e Tailwind CSS por meio do curso da Cod3r - React/Next.js com Tailwind CSS. Esta aplicação permitiu aprofundar os conhecimentos e habilidades em front-end, resultando nessa interface moderna e pratica.",
+    image: "/next-tailwind-cod3r.png",
+    github: "https://github.com/PedroLMaia/React-Next",
+    link: "https://next-tailwind-cod3r.vercel.app/",
+  },
+  {
     name: "Habits",
     description:
       "O Habits é um aplicativo que ajuda os usuários a controlar suas tarefas diárias, monitorando as atividades realizadas e não realizadas. Projeto criado durante a NLW Setup 2023, usando React, Tailwind, Prisma e Typescript.",
