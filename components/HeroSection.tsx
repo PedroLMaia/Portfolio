@@ -39,8 +39,7 @@ const HeroSection = () => {
           <Link
             to="projects"
             className="text-neutral-100 font-semibold px-6 py-3 bg-gray-800 rounded shadow hover:bg-gray-900 dark:bg-neutral-100 dark:text-black"
-            // className="bg-gray-800 text-neutral-100 rounded shadow flex justify-center sm:inline-block hover:-translate-y-1 transition-transform cursor-pointer hover:text-neutral-100 hover:bg-gray-900 dark:bg-neutral-200 dark:text-black dark:hover:text-black dark:hover:bg-neutral-100 font-semibold px-6 py-3"
-            // activeClass="active"
+            activeClass="active"
             spy={true}
             smooth={true}
             offset={-100}
